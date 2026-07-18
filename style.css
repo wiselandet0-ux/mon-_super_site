@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --couleur_principale:greenyellow;
+    --couleur_secondaire:hsl(0, 29%, 97%);
+    --couleur_fond: yellow;
+    --couleur_texte:black ;
+    --police_texte: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --bordure: darkorange;
+    
+}
+
+
+header h1{
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    background-image: linear-gradient(to right, var(--couleur_principale), var(--couleur_secondaire));S
+    padding: 1rem;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: var(--couleur_secondaire);
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    margin-right: 10px;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: var(--couleur_texte);
+    padding: 1rem;
+    
+}
+.navbar ul a:hover{
+    background-color: var(--couleur_principale);
+    color: var(--couleur_secondaire);
+    border-radius: 20px;
+}
+.banner{
+    background-image: url(lakou\ new\ york.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner{
+    height:100vh;
+    background:linear-gradient(
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
+    url(bienvenue.jpg);
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+.baner_content{
+    text-align: center;
+    color: var(--couleur_secondaire);
+}
+.banner-content h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: var(--couleur_fond);
+}
+.banner-content p {
+    font-size: 1.2rem;
+    color: var(--couleur_fond);  
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.items {
+    border-left: 5px solid var(--couleur_principale);
+    padding: 10px;
+    text-align: center;
+}
+.items img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.text {
+    text-align: center;
+    padding: 15px;
+    background-image: linear-gradient(to right, var(--couleur_principale), var(--couleur_secondaire));
+    border-radius: 30px;
+}
+.footercontenue{
+    flex: 1;
+    padding: 20px 0;
+}
+.pieddepage{
+    background-color: var(--couleur_principale);
+    color: var(--couleur_secondaire);
+    padding: 20px;
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-style: italic;
+}
+.footercontenue{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}  
+.titre{
+    text-align: center;
+    padding: 15px;
+    background-color: var(--couleur_principale);
+    border-radius: 30px;
+}
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.grid_items {
+    border-left: 5px solid var(--couleur_principale);
+    padding: 10px;
+    text-align: center;
+}
+.grid_items img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.contact-container h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Évite que le champ ne dépasse */
+    font-size: 14px;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-color: var(--couleur_principale);
+    outline: none;
+}
+
+.btn-voye {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--couleur_principale);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-voye:hover {
+    background-color: var(--bordure);
+}
+
+.mairie-contact-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: Arial, sans-serif;
+}
+
+.mairie-contact-container h2 {
+    color: #2c3e50;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.mairie-contact-container p {
+    color: #555;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.contact-info {
+    background-color: var(--couleur_secondaire);
+    padding: 15px;
+    border-radius: 6px;
+    margin: 20px 0;
+    border-left: var(--bordure);
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+
+.contact-info ul {
+    margin: 5px 0 0 20px;
+    padding: 0;
+    color: var(--bordure);
+    font-size: 14px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-call, .btn-map {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.btn-call {
+    background-color: var(--couleur_secondaire);
+    color: var(--couleur_texte);
+}
+
+.btn-call:hover {
+    background-color: var(--bordure);
+}
+
+.btn-map {
+    background-color: var(--couleur_principale);
+    color: var(--couleur_secondaire)s;
+}
+
+.btn-map:hover {
+    background-color: var(--bordure);
+}
+
+* 1. Kache checkbox la nèt */
+.nav-toggle { display: none; }
+
+/* 2. Pa montre ikon meni an sou PC */
+.menu-icon { display: none; cursor: pointer; }
+
+@media (max-width: 768px) {
+    /* Montre ikon meni an sou mobil */
+    .menu-icon { display: block; }
+}
+    /* Mete tout bagay an kolòn sou mobil */
+    .navbar { flex-wrap: wrap; }
+    @media (max-width: 768px) {
+    /* 1. Montre ikòn meni an sou mobil */
+    .menu-icon {
+        display: block;
+    }
+
+    /* 2. Mete navbar la an kolòn epi kache kontni an pa defo */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    /* Kache lis lyen yo ak bouton Espace la sou mobil */
+    .navbar ul, .navbar .btn-espace {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 0;
+    }
+
+    /* 3. Lè yo klike sou ikòn nan (checkbox la vin checked), montre kontni an */
+    .nav-toggle:checked ~ ul,
+    .nav-toggle:checked ~ .btn-espace {
+        display: flex;
+    }
+
+    
+}
+      
+
+    .adresse {
+        font-size: 14px;           /* Diminye gwosè tèks adrès la pou mobil */
+    }
+    
+    header a {
+        font-size: 14px;           /* Diminye gwosè lyen yo tou */
+    }
+
+.maps-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%; /* Sa a kenbe fòma 16:9 otomatikman */
+  position: relative;
+  height: 0;
+}
+
+.maps-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 0;
+}
+/* Veso videyo a (sa a ap rete nan yon bwat nan grid ou a) */
+.video-container {
+  width: 100%;
+  display: grid;
+  place-items: center;   /* Sa ap santre videyo a nèt nan mitan bwat grid la */
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Videyo a limenm k ap responsiv */
+.video-container iframe {
+  width: 100%;
+  max-width: 750px;      /* Lajè maksimòm videyo a */
+  aspect-ratio: 16 / 9;  /* Kenbe fòma videyo a */
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: none;
+}
