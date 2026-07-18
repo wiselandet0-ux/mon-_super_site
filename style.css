@@ -384,3 +384,19 @@ header h1{
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   border: none;
 }
+.grid_architecture{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.grid_architecture{
+    border-left: 5px solid var(--couleur_principale);
+    padding: 10px;
+    text-align: center;
+}
+grid_architecture img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
