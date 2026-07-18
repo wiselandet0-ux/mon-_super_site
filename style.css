@@ -391,7 +391,6 @@ header h1{
     padding: 20px;
 }
 .grid_architecture{
-    border-left: 5px solid var(--couleur_principale);
     padding: 10px;
     text-align: center;
 }
