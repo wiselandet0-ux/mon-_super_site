@@ -296,7 +296,7 @@ header h1{
     background-color: var(--bordure);
 }
 
-* 1. Kache checkbox la nèt */
+ /* 1. Kache checkbox la nèt */
 .nav-toggle { display: none; }
 
 /* 2. Pa montre ikon meni an sou PC */
@@ -366,7 +366,7 @@ header h1{
   position: absolute;
   border: 0;
 }
-/* Veso videyo a (sa a ap rete nan yon bwat nan grid ou a) */
+/* Veso videyo a (sa a ap rete nan yon bwat nan grid la) */
 .video-container {
   width: 100%;
   display: grid;
