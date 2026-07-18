@@ -119,7 +119,7 @@ header h1{
     padding: 20px 0;
 }
 .pieddepage{
-    background-color: var(--couleur_principale);
+    background-color: var(--couleur_secondaire);
     color: var(--couleur_secondaire);
     padding: 20px;
     text-align: center;
@@ -395,6 +395,28 @@ header h1{
     text-align: center;
 }
 grid_architecture img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.hebergement{
+    display: flex;
+    text-align: center;
+    padding: 15px;
+    background-image: linear-gradient(to right, var(--couleur_principale), var(--couleur_secondaire));
+    border-radius: 30px;
+}
+.grid_hebergement{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.grid_hebergement{
+    padding: 10px;
+    text-align: center;
+}
+.grid_hebergement img {
     width: 100%;
     height: auto;
     border-radius: 10px;
