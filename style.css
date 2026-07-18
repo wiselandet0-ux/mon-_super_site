@@ -114,23 +114,6 @@ header h1{
     background-image: linear-gradient(to right, var(--couleur_principale), var(--couleur_secondaire));
     border-radius: 30px;
 }
-.footercontenue{
-    flex: 1;
-    padding: 20px 0;
-}
-.pieddepage{
-    background-color: var(--couleur_secondaire);
-    color: var(--couleur_secondaire);
-    padding: 20px;
-    text-align: center;
-    font-family: arial, sans-serif;
-    font-style: italic;
-}
-.footercontenue{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}  
 .titre{
     text-align: center;
     padding: 15px;
@@ -419,5 +402,99 @@ grid_architecture img {
 .grid_hebergement img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+/* Style général du Footer */
+.site-footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px 20px 20px;
+    font-family: 'Arial', sans-serif;
+    margin-top: 50px; /* Espace avec le contenu du dessus */
+}
+
+/* Alignement en colonnes pour grands écrans */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Style de chaque bloc/colonne */
+.footer-about, .footer-links, .footer-contact {
+    flex: 1;
+    min-width: 250px; /* Permet de passer à la ligne sur petit écran */
+}
+
+.site-footer h3 {
+    color: #ff9900; /* Une belle couleur orange/or pour les titres */
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.site-footer p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Style de la liste de liens */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+/* Effet au survol des liens */
+.footer-links ul li a:hover {
+    color: #ff9900;
+}
+
+/* Ligne de copyright tout en bas */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+/* Mode Responsive : Pour les écrans de téléphones */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.hero-banner {
+    position: relative;
+    background-image: url(rue\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.banner-contenus{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour lisibilité */
+    padding: 20px;
     border-radius: 10px;
 }
