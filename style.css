@@ -377,9 +377,9 @@ header h1{
     padding: 10px;
     text-align: center;
 }
-grid_architecture img {
+.grid_architecture img {
     width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 10px;
 }
 .hebergement{
@@ -392,7 +392,7 @@ grid_architecture img {
 .grid_hebergement{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 30px;
     padding: 20px;
 }
 .grid_hebergement{
@@ -401,8 +401,14 @@ grid_architecture img {
 }
 .grid_hebergement img {
     width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 10px;
+}
+.grid-item img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+
 }
 /* Style général du Footer */
 .site-footer {
@@ -490,11 +496,53 @@ grid_architecture img {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--couleur_texte);
 }
-.banner-contenus{
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour lisibilité */
-    padding: 20px;
-    border-radius: 10px;
+.tourisme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+/* Style par défaut : Mobile (1 colonne) */
+.grid-activites {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Style pour Tablettes et Ordinateurs (Largeur supérieure à 768px) */
+@media (min-width: 768px) {
+  .grid-activites {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Style par défaut : Mobile (1 colonne) */
+.grid-infos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 20px;
+}
+
+/* Style pour Tablettes (Largeur supérieure à 600px : 2 colonnes) */
+@media (min-width: 600px) {
+  .grid-infos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Style pour Ordinateurs (Largeur supérieure à 1024px : 4 colonnes) */
+@media (min-width: 1024px) {
+  .grid-infos {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
