@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hebergement</title>
-    <link rel="stylesheet" href="style.css">
+    <title>hebergement</title>
+    <link rel="stylesheet" href="hebergement.css">
 </head>
 <body>
+    <header>
+    <!-- Votre barre de navigation (ne touchez pas à ce qu'il y a dedans) -->
     <nav class="navbar">
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
   
@@ -15,7 +17,7 @@
     <span class="bar"><img src="Menu-Icon-PNG-Isolated-HD.png" alt=""></span>
   </label>
     <ul>
-                <li><a href="Accueil.html">Accueil  </a></li>
+                <li><a href="Accueil.html">Accueil</a></li>
                 <li><a href="planification.html">planification</a></li>
                 <li><a href="Decouvrir.html">Decouvrir</a></li>
                 <li><a href="Hebergement.html">Hebergement</a></li>
@@ -23,50 +25,83 @@
     </ul>
 </nav>
 
-<section class="hero-banner">
-    <div class="banner-contenus">
-        <h1>HEBERGEMENT</h1>
-            <p>Découvrez les options d'hébergement à Jacmel, Haïti, pour un séjour inoubliable.</p>
+    <!-- AJOUTEZ UNIQUEMENT CE BLOC ICI -->
+    <div class="banner-text">
+        <h1>Hébergement</h1>
+        <p>Découvrez les meilleurs endroits où séjourner à Jacmel</p>
     </div>
-    </section>
-    <br>
+</header>
+<!-- CONTENEUR PRINCIPAL DES HÔTELS -->
+<main class="accommodation-container">
+    <div class="hotel-grid">
 
+        <!-- Hôtel 1 : Cap Lamandou Hotel -->
+        <article class="hotel-card">
+            <div class="hotel-image">
+                <img src="cap lamandou 2.jpg" alt="Cap Lamandou Hotel">
+            </div>
+            <div class="hotel-card-content">
+                <h3>Cap Lamandou Hotel</h3>
+                <p>Idéalement perché face à la mer des Caraïbes, cet établissement haut de gamme offre un cadre paisible avec une vue imprenable sur l'océan, une magnifique piscine et un service attentionné. Le refuge parfait pour recharger les batteries.</p>
+            </div>
+        </article>
 
-    
-</section>
+        <!-- Hôtel 2 : Hôtel-Restaurant Cyvadier Plage -->
+        <article class="hotel-card">
+            <div class="hotel-image">
+                <img src="hotel-cyvadier.jpg" alt="Hôtel-Restaurant Cyvadier Plage">
+            </div>
+            <div class="hotel-card-content">
+                <h3>Hôtel-Restaurant Cyvadier Plage</h3>
+                <p>Si vous recherchez une ambiance de bord de mer, de nature et de farniente au soleil, c'est l'endroit rêvé. Cet hôtel est situé au bord d'une petite crique privée bleu turquoise, offrant un havre de paix unique dans la zone de Cyvadier.</p>
+            </div>
+        </article>
 
-<section class="heberbegement_texte">
-    <div class="hebergement"> <p>Envie de déconnecter ? Laissez-vous séduire par un séjour à Jacmel, la capitale culturelle d’Haïti. <br>
-         Idéalement perché face à la mer des Caraïbes, l'établissement Cap Lamandou Hotel offre un cadre paisible avec une vue imprenable sur l'océan et une piscine propice à la détente. Entre douceur de vivre, plages à proximité et architecture coloniale, c’est le refuge parfait pour recharger les batteries.</p></div>
+        <!-- Hôtel 3 : Manoir Adriana Hotel -->
+        <article class="hotel-card">
+            <div class="hotel-image">
+                <img src="manoir-adriana-hotel.jpg" alt="Manoir Adriana Hotel">
+            </div>
+            <div class="hotel-card-content">
+                <h3>Manoir Adriana Hotel</h3>
+                <p>Une somptueuse demeure classique de style colonial située au cœur même du centre historique de Jacmel. Empreint d'un riche charme culturel, c'est l'adresse idéale pour les visiteurs souhaitant explorer la ville et ses ateliers d'artistes.</p>
+            </div>
+        </article>
 
+        <!-- Hôtel 4 : Le Colin's Hotel -->
+        <article class="hotel-card">
+            <div class="hotel-image">
+                <img src="colin-s-hotel.jpg" alt="Le Colin's Hotel">
+            </div>
+            <div class="hotel-card-content">
+                <h3>Le Colin's Hotel</h3>
+                <p>Situé discrètement sur la rue Sainte-Anne, ce charmant hôtel de charme allie parfaitement le confort moderne à l'authenticité de l'accueil haïtien. Avec ses chambres soignées, il propose une expérience intime et très personnalisée.</p>
+            </div>
+        </article>
 
-</section>
+        <!-- Hôtel 5: florita -->
+        <article class="hotel-card">
+            <div class="hotel-image">
+                <img src="florita 1.jpg" alt="florita Hotel">
+            </div>
+            <div class="hotel-card-content">
+                <h3>Florita hotel</h3>
+                <p>Situé au cœur du centre historique de Jacmel, l'Hotel Florita est une véritable institution culturelle et historique. C'est l'un des plus anciens hôtels de la ville toujours en service, abrité dans un magnifique manoir du XIXe siècle (datant de l'époque de l'âge d'or du commerce du café). L'établissement se distingue par son architecture coloniale authentique, ses hauts plafonds, ses meubles en acajou d'époque et ses détails en fer forgé. C'est le lieu idéal pour les voyageurs en quête d'un charme d'antan, d'œuvres d'art local et d'une immersion totale dans l'atmosphère artistique de Jacmel.</p>
+        </article>
 
-<section grid_hebergement>
-    <div class="grid_hebergement">
-        <div class="items"> <img src="cap lamadou 6.jpg"></div>
-        <div class="items"> <img src="cap lamandou 2.jpg" alt=""></div>
-        <div class="items"> <img src="cap lamandou 3.jpg" alt=""></div>
-        <div class="items"> <img src="cap lamandou 7.jpg" alt=""></div>
-        
+        <!-- Hôtel 6: Hotel Kabic Beach Club -->
+        <article class="hotel-card">
+            <div class="hotel-image">
+                <img src="Kabic-Beach-Club.jpg" alt="Hotel Kabic Beach Club">
+            </div>
+            <div class="hotel-card-content">
+                <h3>Hotel Kabic Beach Club</h3>
+                <p>Situé un peu plus loin, le long de la côte à Cayes-Jacmel, l'Hotel Kabic Beach Club offre une ambiance radicalement différente, résolument tournée vers la mer et la détente. Établi près de la célèbre plage de Kabic (un spot très prisé par les amateurs de surf en Haïti), cet hôtel propose un cadre plus décontracté, moderne et les pieds dans l'eau. Avec sa piscine, son accès direct à la plage et son atmosphère tropicale, c'est une destination de choix pour ceux qui souhaitent fuir l'animation urbaine pour profiter du soleil, des vagues et de la nature côtière.</p>
+
     </div>
+</main>
 
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-<br>
-
-<footer class="site-footer">
+ <footer class="site-footer">
     <div class="footer-container">
         <!-- Section 1: À propos de Jacmel -->
         <div class="footer-about">
@@ -78,8 +113,8 @@
         <div class="footer-links">
             <h3>Liens Rapides</h3>
             <ul>
-                <li><a href="acceuil.html">Accueil</a></li>
-                <li><a href="planification.html">Planification</a></li>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Planification.html">Planification</a></li>
                 <li><a href="Decouvrir.html">Découvrir</a></li>
                 <li><a href="Hebergement.html">Hébergement</a></li>
                 <li><a href="Galerie.html">Galerie</a></li>
@@ -91,7 +126,7 @@
             <h3>Contact</h3>
             <p><i class="fas fa-map-marker-alt"></i> Jacmel, Sud-Est, Haïti</p>
             <p><i class="fas fa-envelope"></i> info@jacmeltourisme.ht</p>
-            <p><i class="fas fa-phone"></i> +509 3128-XXXX</p>
+            <p><i class="fas fa-phone"></i> +509 4619-5011</p>
         </div>
     </div>
 
@@ -100,6 +135,5 @@
         <p>&copy; 2026 Jacmel Tourisme - Tous droits réservés. Développé par Wiselande.</p>
     </div>
 </footer>
-        
 </body>
 </html>

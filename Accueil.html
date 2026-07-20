@@ -3,18 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site touristique jacmel</title>
+    <title>Accueil</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <h1>Bienvenue a jacmel</h1>
-</header>
-<br>
 
-<br>
-
-<nav class="navbar">
+    <nav class="navbar">
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
   
   <!-- Label la se li ki ranplase ikon an -->
@@ -22,7 +16,7 @@
     <span class="bar"><img src="Menu-Icon-PNG-Isolated-HD.png" alt=""></span>
   </label>
     <ul>
-                <li><a href="Accueil.html">Accueil </a></li>
+                <li><a href="Accueil.html">Accueil</a></li>
                 <li><a href="planification.html">planification</a></li>
                 <li><a href="Decouvrir.html">Decouvrir</a></li>
                 <li><a href="Hebergement.html">Hebergement</a></li>
@@ -30,48 +24,102 @@
     </ul>
 </nav>
 
+<br>
 
 
-        <section class="banner">
-            <div class="banner-content">
-                <h1>GOUTEZ A LA DOUCEUR DE VIVRE , DECOUVEVREZ JACMEL</h1>
-                    <p>ville où l’art, l’histoire et le charme créole se rencontrent pour offrir une expérience inoubliable.</p>
-            </div>
-            </section>
-            <br>
-            <section class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/U9BZvMneqGQ?si=FXe0cy1bGK0dgebx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <br>
-            </section>
-            
+<br>
+    <!-- BANNIÈRE -->
+<section class="gallery-banner">
+    <h1>Jacmel</h1>
+    <p>Explorez la richesse visuelle, l'artisanat unique et les couleurs vibrantes de la Ville Lumière.</p>
+</section>
 
-                 <section>
-                    <div class="text">
-                        <p><h4>Jacmel est une perle culturelle unique, surnommée la « Ville Lumière » pour son histoire d'innovation.<br>
-                            Entre ses façades coloniales, son artisanat en papier mâché mondialement reconnu et sa douceur de vivre au bord de la mer des Caraïbes,  br 
-                            chaque coin de rue raconte une histoire.</h4></p>
-                            <br>
+<!-- SECTION GRILLE -->
+<main class="gallery-container">
+    <div class="gallery-grid">
+        
+        <!-- Image 1 -->
+        <div class="gallery-item">
+            <img src="artisanat jacmel.jpg" alt="Artisanat Jacmel">
+        </div>
+        
+        <!-- Image 2 -->
+        <div class="gallery-item">
+            <img src="carnaval 4.jpg" alt="Carnaval de Jacmel">
+        </div>
+        
+        <!-- Image 3 -->
+        <div class="gallery-item">
+            <img src="plage.jpg" alt="Plage de Jacmel">
+        </div>
+        
+        <!-- Ajoutez autant d'images que vous voulez ici... -->
 
-                    </div>
-                    <br>
+    </div>
+</main>
 
-            </section>
+<section class="jacmel-grid-section">
+  <h2>Pourquoi visiter Jacmel ?</h2>
+  <div class="jacmel-grid">
+    <div class="grid-card">
+      <div class="card-icon">🎭</div>
+      <h3>Art & Artisanat</h3>
+      <p>Capitale culturelle d'Haïti, célèbre pour ses masques en papier mâché colorés, ses peintures et son carnaval légendaire.</p>
+    </div>
 
-         <section class="grid-container">
-            <div class="items"> <img src="JacmelBay.webp" alt=""></div>
-            <div class="items"> <img src="lakou new york.jpg" alt=""></div>
-            <div class="items"> <img src="plage.jpg" alt=""></div>
-         </section>
-         <br>
+    <div class="grid-card">
+      <div class="card-icon">🌊</div>
+      <h3>Nature & Plages</h3>
+      <p>Des cascades somptueuses du Bassin Bleu aux plages de sable chaud le long des Caraïbes, un havre de sérénité.</p>
+    </div>
 
-            <br>
+    <div class="grid-card">
+      <div class="card-icon">🏛️</div>
+      <h3>Histoire & Architecture</h3>
+      <p>Un centre historique unique doté d'une architecture coloniale aux balcons en fer forgé témoignant d'un riche passé.</p>
+    </div>
+  </div>
+</section>
 
-            <br>
-            
+<section class="jacmel-stats-section">
+  <h2 class="stats-title">Jacmel en Chiffres & Faits Clés</h2>
+  <p class="stats-subtitle">Ce qui fait la richesse et l'identité de notre ville</p>
 
+  <div class="stats-grid">
+    <!-- Carte 1 : Population -->
+    <div class="stat-card">
+      <div class="stat-icon">👥</div>
+      <div class="stat-number">+180 000</div>
+      <div class="stat-label">Habitants</div>
+      <p class="stat-desc">Une population chaleureuse et accueillante au cœur du département du Sud-Est.</p>
+    </div>
 
+    <!-- Carte 2 : Sites Touristiques -->
+    <div class="stat-card">
+      <div class="stat-icon">🏖️</div>
+      <div class="stat-number">15+</div>
+      <div class="stat-label">Sites Touristiques</div>
+      <p class="stat-desc">Du majestueux Bassin Bleu à la plage de Raymond Les Bains, des trésors à explorer.</p>
+    </div>
 
-         <footer class="site-footer">
+    <!-- Carte 3 : Patrimoine / Architecture -->
+    <div class="stat-card">
+      <div class="stat-icon">🏛️</div>
+      <div class="stat-number">1698</div>
+      <div class="stat-label">Fondation de la Ville</div>
+      <p class="stat-desc">Plus de 3 siècles d'histoire inscrits dans son architecture coloniale et ses balcons en fer forgé.</p>
+    </div>
+
+    <!-- Carte 4 : Culture & Artisans -->
+    <div class="stat-card">
+      <div class="stat-icon">🎭</div>
+      <div class="stat-number">1er</div>
+      <div class="stat-label">Carnaval d'Art d'Haïti</div>
+      <p class="stat-desc">Capitale culturelle réputée mondialement pour ses artistes et son artisanat en papier mâché.</p>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
     <div class="footer-container">
         <!-- Section 1: À propos de Jacmel -->
         <div class="footer-about">
@@ -96,7 +144,7 @@
             <h3>Contact</h3>
             <p><i class="fas fa-map-marker-alt"></i> Jacmel, Sud-Est, Haïti</p>
             <p><i class="fas fa-envelope"></i> info@jacmeltourisme.ht</p>
-            <p><i class="fas fa-phone"></i> +509 3128-XXXX</p>
+            <p><i class="fas fa-phone"></i> +509 4619-5011</p>
         </div>
     </div>
 

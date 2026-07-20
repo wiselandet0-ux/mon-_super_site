@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>galerie</title>
+    <title>Galerie - Jacmel Tourisme</title>
     <link rel="stylesheet" href="style.css">
+    
+    
 </head>
-<nav class="navbar">
+<body>
+    <nav class="navbar">
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
   
   <!-- Label la se li ki ranplase ikon an -->
@@ -14,7 +17,7 @@
     <span class="bar"><img src="Menu-Icon-PNG-Isolated-HD.png" alt=""></span>
   </label>
     <ul>
-                <li><a href="Acceuil.html">Acceuil</a></li>
+                <li><a href="Accueil.html">Accueil</a></li>
                 <li><a href="planification.html">planification</a></li>
                 <li><a href="Decouvrir.html">Decouvrir</a></li>
                 <li><a href="Hebergement.html">Hebergement</a></li>
@@ -22,92 +25,111 @@
     </ul>
 </nav>
 
-<br>
+   
 
-<br>
-
-<body>
-    <div class="titre">
-   <h1>Hotels a jacmel</h1>
-   </div>
-<section class="grid_container">
-    <div class="grid_items">
-        <p>Le Colin's Hotel, qui se trouve sur la rue Sainte-Anne, <br>
-         est un charmant écrin qui allie le confort moderne à l'authenticité de la culture haïtienne. 
-         Avec une dizaine de chambres soigneusement aménagées (chambres de luxe et suites), cet hôtel propose une expérience très personnalisée</p>
-        <img src="colin-s-hotel.jpg" alt=""></div>
-    <div class="items">
-        <p>Manoir Adriana Hotel
-         Situé au cœur de Jacmel (sur la rue d’Orléans),  
-         le Manoir Adriana Hotel est un établissement classique empreint de charme culturel. 
-         C'est l'adresse idéale pour les visiteurs souhaitant explorer le centre-ville et ses ateliers d'artistes</p>
-        <img src="manoir-adriana-hotel.jpg" alt=""></div>
-    <div class="items">
-        <p>Hôtel-Restaurant Cyvadier Plage
-        Si vous recherchez une ambiance de bord de mer,
-         de nature et de farniente au soleil, l'Hôtel-Restaurant Cyvadier Plage est l'endroit rêvé. 
-         Cet hôtel est situé au bord d'une petite crique privée surplombant l'océan, dans la zone de Cyvadier (juste avant d'arriver dans la ville de Jacmel).</p>
-        <img src="hotel-cyvadier.jpg" alt=""></div>
-</section>
-
-        <div class="titre">
-            <h2>Les plages a jacmel</h2>
-            </div>
-
-        <section class="grid_container">
-            <div class="grid_items">
-                <p>Plage de Jacmel
-                    La plage de Jacmel est un endroit idéal pour se détendre et profiter du soleil. 
-                    Avec son sable fin et ses eaux cristallines, c'est l'endroit parfait pour nager, bronzer ou simplement se promener le long du rivage.</p>
-                <img src="plage 2.jpg" alt=""></div>
-
-                <div class="grid_items">
-                    <p>Plage de Cyvadier
-                        La plage de Cyvadier est une destination populaire pour les visiteurs cherchant à profiter du soleil et de la mer. 
-                        Avec ses eaux calmes et son sable fin, c'est l'endroit idéal pour se baigner, faire du sport nautique ou simplement se reposer.</p>
-                    <img src="plage 3.jpg" alt=""></div>
-                    <div class="grid_items">
-                        <p>Plage de Raymond
-                            La plage de Raymond est un endroit paisible et tranquille pour se détendre et profiter de la nature. 
-                            Avec ses eaux claires et son sable doux, c'est l'endroit idéal pour se promener, faire du kayak ou simplement se reposer.</p>
-                        <img src="plage 4.jpg" alt=""></div>
-
+    <main class="container">
+        
+        <!-- SECTION HÔTELS -->
+        <section class="gallery-section">
+            <h1 class="main-title">Hôtels à Jacmel</h1>
+            <div class="grid">
+                
+                <!-- Le Colin's Hotel -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="colin-s-hotel.jpg" alt="Le Colin's Hotel">
                     </div>
-                    </section>
+                    <div class="card-content">
+                        <h3>Le Colin's Hotel</h3>
+                        <p>Situé sur la rue Sainte-Anne, c'est un charmant écrin qui allie le confort moderne à l'authenticité de la culture haïtienne. Avec une dizaine de chambres soigneusement aménagées (chambres de luxe et suites), cet hôtel propose une expérience très personnalisée.</p>
+                    </div>
+                </div>
 
-                    <div class="titre"> <h2>Bassin bleu</h2></div>
+                <!-- Manoir Adriana Hotel -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="manoir-adriana-hotel.jpg" alt="Manoir Adriana Hotel">
+                    </div>
+                    <div class="card-content">
+                        <h3>Manoir Adriana Hotel</h3>
+                        <p>Situé au cœur de Jacmel (sur la rue d’Orléans), le Manoir Adriana Hotel est un établissement classique empreint de charme culturel. C'est l'adresse idéale pour les visiteurs souhaitant explorer le centre-ville et ses ateliers d'artistes.</p>
+                    </div>
+                </div>
 
-                    <section class="grid_container">
-                        <div class="grid_items">
-                            <p>Bassin Bleu : Un paradis caché à Jacmel
-                                Niché au milieu d'une végétation tropicale luxuriante,
-                                 dans les collines qui surplombent la ville de Jacmel,
-                                  Bassin Bleu est un site naturel d'une beauté magique et sauvage.</p>
-                            <img src="caption.bassin bleu.jpg" alt=""></div>
-                            <div class="grid_items">
-                                <p>Le Bassin Bleu est un ensemble de trois bassins naturels d'eau douce, alimentés par une cascade qui se jette dans la rivière en contrebas. 
-                                    L'eau est d'un bleu profond et cristallin, et les bassins sont entourés de falaises rocheuses et de végétation tropicale dense.</p>
-                                <img src="bassin bleu caption.jpg" alt=""></div>
-                                <div class="grid_items">
-                                    <p>Le site est accessible par un sentier de randonnée qui serpente à travers la forêt tropicale, offrant des vues spectaculaires sur la vallée et les montagnes environnantes. 
-                                        Les visiteurs peuvent se baigner dans les bassins, explorer les environs et profiter de la beauté naturelle de l'endroit.</p>
-                                    <img src="bassn bleu.jpg" alt=""></div>
+                <!-- Hôtel-Restaurant Cyvadier Plage -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="hotel-cyvadier.jpg" alt="Hôtel-Restaurant Cyvadier Plage">
+                    </div>
+                    <div class="card-content">
+                        <h3>Hôtel-Restaurant Cyvadier Plage</h3>
+                        <p>Si vous recherchez une ambiance de bord de mer, de nature et de farniente au soleil, l'Hôtel-Restaurant Cyvadier Plage est l'endroit rêvé. Cet hôtel est situé au bord d'une petite crique privée surplombant l'océan, dans la zone de Cyvadier.</p>
+                    </div>
+                </div>
 
-                            </div>
+            </div>
+        </section>
 
-                        </div>
+        <!-- SECTION PLAGES -->
+        <section class="gallery-section">
+            <h2 class="section-title">Les plages à Jacmel</h2>
+            <div class="grid">
 
-                    </section>
+                <!-- Plage de Jacmel -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="plage 5.jpg" alt="Plage de Jacmel">
+                    </div>
+                    <div class="card-content">
+                        <h3>Plage de Jacmel</h3>
+                        <p>La plage de Jacmel est un endroit idéal pour se détendre et profiter du soleil. Avec son sable fin et ses eaux cristallines, c'est l'endroit parfait pour nager, bronzer ou simplement se promener le long du rivage.</p>
+                    </div>
+                </div>
 
+                <!-- Plage de Cyvadier -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="plage 2.jpg" alt="Plage de Cyvadier">
+                    </div>
+                    <div class="card-content">
+                        <h3>Plage de Cyvadier</h3>
+                        <p>La plage de Cyvadier est une destination populaire pour les visiteurs cherchant à profiter du soleil et de la mer. Avec ses eaux calmes et son sable fin, c'est l'endroit idéal pour se baigner ou simplement se reposer.</p>
+                    </div>
+                </div>
 
-                    
-                    <br>
+                <!-- Plage de Raymond -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="plage 3.jpg" alt="Plage de Raymond">
+                    </div>
+                    <div class="card-content">
+                        <h3>Plage de Raymond</h3>
+                        <p>La plage de Raymond est un endroit paisible et tranquille pour se détendre et profiter de la nature. Avec ses eaux claires et son sable doux, c'est l'endroit idéal pour se promener, faire du kayak ou simplement se reposer.</p>
+                    </div>
+                </div>
 
-                    <br>
+            </div>
+        </section>
 
+        <!-- SECTION BASSIN BLEU -->
+        <section class="gallery-section">
+            <h2 class="section-title">Bassin Bleu</h2>
+            <div class="bassin-bleu-container">
+                <div class="bassin-image">
+                    <img src="bassin bleu caption.jpg" alt="Bassin Bleu">
+                </div>
+                <div class="bassin-content">
+                    <h3>Bassin Bleu : Un paradis caché à Jacmel</h3>
+                    <p>Niché au milieu d'une végétation tropicale luxuriante, dans les collines qui surplombent la ville de Jacmel, Bassin Bleu est un site naturel d'une beauté magique et sauvage.</p>
+                    <p>Le Bassin Bleu est un ensemble de trois bassins naturels d'eau douce, alimentés par une cascade qui se jette dans la rivière en contrebas. L'eau est d'un bleu profond et cristallin, et les bassins sont entourés de falaises rocheuses.</p>
+                    <p>Le site est accessible par un sentier de randonnée qui serpente à travers la forêt tropicale, offrant des vues spectaculaires sur la vallée et les montagnes environnantes. Les visiteurs peuvent s'y baigner et explorer les environs.</p>
+                </div>
+            </div>
+        </section>
 
+    </main>
 
-                    <footer class="site-footer">
+    <footer class="site-footer">
     <div class="footer-container">
         <!-- Section 1: À propos de Jacmel -->
         <div class="footer-about">
@@ -132,7 +154,7 @@
             <h3>Contact</h3>
             <p><i class="fas fa-map-marker-alt"></i> Jacmel, Sud-Est, Haïti</p>
             <p><i class="fas fa-envelope"></i> info@jacmeltourisme.ht</p>
-            <p><i class="fas fa-phone"></i> +509 3128-XXXX</p>
+            <p><i class="fas fa-phone"></i> +509 4619-5011</p>
         </div>
     </div>
 
@@ -141,6 +163,5 @@
         <p>&copy; 2026 Jacmel Tourisme - Tous droits réservés. Développé par Wiselande.</p>
     </div>
 </footer>
-
 </body>
 </html>
