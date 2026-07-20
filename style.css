@@ -887,3 +887,43 @@ header h1{
   color: #555555;
   line-height: 1.4;
 }
+/* Style de la grille d'images */
+.image-grid {
+  display: grid;
+  /* Crée des colonnes responsives d'au moins 250px */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px; /* Espace entre les images */
+  padding: 20px 0;
+}
+
+/* Style individuel pour chaque carte d'image */
+.grid-item {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol */
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Dimensionnement correct de l'image */
+.grid-item img {
+  width: 100%;
+  height: 220px; /* Ajustez la hauteur selon vos besoins */
+  object-fit: cover; /* Recadre proprement sans déformer l'image */
+  display: block;
+}
+
+/* Légende sous l'image */
+.caption {
+  padding: 12px;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}

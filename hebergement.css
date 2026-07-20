@@ -5,7 +5,7 @@ box-sizing: border-box;
 }
 
 :root {
-    --couleur_principale:greenyellow;
+    --couleur_principale:blue;
     --couleur_secondaire:hsl(0, 29%, 97%);
     --couleur_fond: yellow;
     --couleur_texte:black ;
